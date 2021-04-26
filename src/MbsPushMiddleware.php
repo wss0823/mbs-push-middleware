@@ -30,7 +30,7 @@ class MbsPushMiddleware extends Middleware
     function __construct()
     {
         $this->swoole = $this->mbsPushMiddlewareService->getSwoole();
-        $this->table = $this->getTable($this->config->path("middleware.mbsPush.table"));
+        $this->table = $this->getTable('mbsPushTable');
         $this->requestId = $this->getRequestId();
     }
 
