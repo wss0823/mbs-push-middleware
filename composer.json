@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Uniondrug\\ModuleLogMiddleware\\": "src/"
+            "Uniondrug\\MbsPushMiddleware\\": "src/"
         }
     },
     "config": {
