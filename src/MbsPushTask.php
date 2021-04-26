@@ -20,6 +20,7 @@ class MbsPushTask extends XTask
     {
         $data = $this->data;
         //异步写入数据
+        $this->logger->info("推送的数据是:".json_encode($data));
         $this->serviceSdk->module->jmbs->publish($data);
     }
 }

@@ -73,6 +73,7 @@ class MbsPushMiddleware extends Middleware
     private function addMbs()
     {
         $mbsArr = $this->table->get($this->requestId);
+        $this->logger->info("获取对应的请求：".$this->requestId);
         $this->table->del($this->requestId);
         $this->swoole->runTask(MbsPushTask::class,$mbsArr);
     }
