@@ -17,7 +17,7 @@
     "require": {
         "uniondrug/framework": "^2.0",
         "uniondrug/middleware": "^2.0",
-        "uniondrug/phar": "^1.0",
+        "uniondrug/phar": "^2.0",
         "uniondrug/service-sdk" : "^3.0"
     },
     "autoload": {
